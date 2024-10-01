@@ -8,7 +8,7 @@ const dummyApps = [
   {
     _id: "1",
     url: "https://blogify.pankri.com/",
-    svg: "/pankri.png",
+    svg: "/blogify.png",
     name: "PK Blogify",
     category: "Blog",
     stack: [
@@ -63,6 +63,34 @@ const dummyApps = [
     description:
       "PK JobHive is an AI-driven tool designed for job preparation and resume building. It provides personalized resume crafting and job application support using advanced AI algorithms. Built with JavaScript and Next.js for dynamic capabilities, Tailwind CSS for a modern interface, and MongoDB for efficient data management, it aims to streamline the job search process.",
   },
+  {
+    _id: "6",
+    url: "https://digmark.pankri.com/",
+    svg: "/digmark.png", // Replace with actual image path
+    name: "PK DigMark",
+    category: "Marketplace",
+    stack: [
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Tailwind CSS",
+      "Express.js",
+      "MongoDB",
+      "Node.js",
+    ],
+    description:
+      "PK DigMark is a digital assets marketplace where users can buy and sell any type of digital assets, from art and music to software and domain names, providing a platform for creative transactions.",
+  },
+  {
+    _id: "7",
+    url: "https://facefeed.pankri.com/",
+    svg: "/facefeed.png", // Replace with actual image path
+    name: "PK Facefeed",
+    category: "Social Media",
+    stack: ["JavaScript", "React", "Express.js", "MongoDB", "Tailwind CSS"],
+    description:
+      "PK Facefeed is a social media platform that allows users to connect with random users, chat with them, and share photos, media, and stories, creating a unique social experience.",
+  },
 ];
 
 const itemsPerPage = 1; // Number of items per page
@@ -90,7 +118,10 @@ const MyApps = () => {
   };
 
   return (
-    <div className="p-6 rounded-lg shadow-md shadow-primary w-full">
+    <div
+      className="p-6 rounded-lg shadow-md shadow-primary w-full"
+      id="projects"
+    >
       <div>
         <div className="flex items-center justify-center text-2xl md:text-3xl font-extrabold text-gray-800">
           <hr className="flex-grow border-t border-gray-300" />
